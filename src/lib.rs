@@ -23,8 +23,8 @@
 //! of a shader. It can be a global, uniform declarations, vertex attributes, a function, a
 //! structure, etc.
 
-#[macro_use]
-extern crate nom;
+#[macro_use] extern crate nom;
+#[cfg(feature = "spirv")] extern crate shaderc;
 
 pub mod parser;
 mod parsers;
