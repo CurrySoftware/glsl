@@ -17,6 +17,10 @@ is-it-maintained-issue-resolution = { repository = "phaazon/glsl" }
 is-it-maintained-open-issues = { repository = "phaazon/glsl" }
 maintenance = { status = "passively-maintained" }
 
+[dependencies]
+pest = "2"
+pest_derive = "2"
+
 [dependencies.nom]
 version = "3.2"
 default-features = true

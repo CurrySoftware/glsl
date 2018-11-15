@@ -29,11 +29,13 @@
 //! nodes with regular Rust. The [`Visitor`] trait will be a great friend of yours when you will
 //! want to cope with deep mutation, filtering and validation.
 
-#[macro_use]
-extern crate nom;
+#[macro_use] extern crate nom;
+extern crate pest;
+#[macro_use] extern crate pest_derive;
 
 pub mod parser;
-mod parsers;
+mod pest_parser; // new parser, with pest!
+mod parsers; // legacy nom parsers
 pub mod syntax;
 pub mod transpiler;
 pub mod visitor;
